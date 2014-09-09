@@ -11,8 +11,6 @@ import (
 	"fmt"
 	"io"
 	"unicode/utf8"
-
-	"github.com/youtube/vitess/go/hack"
 )
 
 // ChunkedWriter has the same interface as bytes.Buffer's write functions.
@@ -68,7 +66,7 @@ func (cw *ChunkedWriter) Truncate(n int) {
 }
 
 func (cw *ChunkedWriter) Write(p []byte) (n int, err error) {
-	return cw.WriteString(hack.String(p))
+	return cw.WriteString(string(p))
 }
 
 func (cw *ChunkedWriter) WriteString(p string) (n int, err error) {
