@@ -5,4 +5,4 @@ bytes2,like bytes(std)
 * It additionally provides a Reserve function that returns a []byte that
 * the caller can directly change.
 
-forked from [vitess|https://github.com/youtube/vitess/go/byte2]
+forked from [vitess] : https://github.com/youtube/vitess/go/byte2
