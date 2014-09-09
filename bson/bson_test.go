@@ -9,8 +9,7 @@ import (
 	"reflect"
 	"testing"
 	"time"
-
-	"github.com/youtube/vitess/go/bytes2"
+	"crate/bytes2"
 )
 
 type alltypes struct {

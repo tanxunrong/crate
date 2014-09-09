@@ -10,8 +10,6 @@ import (
 	"bytes"
 	"math"
 	"time"
-
-	"github.com/youtube/vitess/go/hack"
 )
 
 // VerifyObject verifies kind to make sure it's
@@ -335,7 +333,7 @@ func ReadCString(buf *bytes.Buffer) string {
 	}
 	// Read including null termination, but
 	// return the string without the null.
-	return hack.String(Next(buf, index+1)[:index])
+	return string(Next(buf, index+1)[:index])
 }
 
 // Next returns the next n bytes from buf.

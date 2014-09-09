@@ -8,8 +8,7 @@ package bson
 
 import (
 	"time"
-
-	"github.com/youtube/vitess/go/bytes2"
+	"crate/bytes2"
 )
 
 // EncodeInterface bson encodes an interface{}. Elements

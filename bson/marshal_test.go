@@ -7,8 +7,7 @@ package bson
 import (
 	"testing"
 	"time"
-
-	"github.com/youtube/vitess/go/bytes2"
+	"crate/bytes2"
 )
 
 type String1 string

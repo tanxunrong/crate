@@ -10,8 +10,7 @@ import (
 	"reflect"
 	"strconv"
 	"time"
-
-	"github.com/youtube/vitess/go/bytes2"
+	"crate/bytes2"
 )
 
 // LenWriter records the current write position on the buffer
