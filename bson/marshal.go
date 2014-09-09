@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"strconv"
 	"time"
-	"crate/bytes2"
+	"github.com/tanxunrong/crate/bytes2"
 )
 
 // LenWriter records the current write position on the buffer

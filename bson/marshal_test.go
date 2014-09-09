@@ -7,7 +7,7 @@ package bson
 import (
 	"testing"
 	"time"
-	"crate/bytes2"
+	"github.com/tanxunrong/crate/bytes2"
 )
 
 type String1 string

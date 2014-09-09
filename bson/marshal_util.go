@@ -8,7 +8,7 @@ package bson
 
 import (
 	"time"
-	"crate/bytes2"
+	"github.com/tanxunrong/crate/bytes2"
 )
 
 // EncodeInterface bson encodes an interface{}. Elements

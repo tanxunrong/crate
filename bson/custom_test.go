@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 	"time"
-	"crate/bytes2"
+	"github.com/tanxunrong/crate/bytes2"
 )
 
 const (
