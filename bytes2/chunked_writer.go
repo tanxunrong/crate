@@ -52,6 +52,9 @@ func (cw *ChunkedWriter) Reset() {
 	cw.bufs[0] = b
 }
 
+// Suppose cw has total len m.
+// if m >= n,cut cw to left n bytes left,
+// else panic.
 func (cw *ChunkedWriter) Truncate(n int) {
 	for i, buf := range cw.bufs {
 		if n > len(buf) {
@@ -69,6 +72,8 @@ func (cw *ChunkedWriter) Write(p []byte) (n int, err error) {
 	return cw.WriteString(string(p))
 }
 
+// Make new buf[len],len = initial chunksize,and append to buf[][],
+// instead just append to buf[].
 func (cw *ChunkedWriter) WriteString(p string) (n int, err error) {
 	n = len(p)
 	lastbuf := cw.bufs[len(cw.bufs)-1]
