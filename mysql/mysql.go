@@ -6,7 +6,7 @@ package mysql
 
 /*
 #cgo CFLAGS: -Werror=implicit -I/usr/include/mysql
-#cgo LDFLAGS: -L./ -lgomysql -lmysqlclient
+#cgo LDFLAGS: -L/usr/local/include -lgomysql -lmysqlclient
 #include <stdlib.h>
 #include <mysqld_error.h>
 #include "vtmysql.h"
